@@ -1,0 +1,30 @@
+git-scm.com/downloads
+
+tjfcl
+
+bash shell 실행
+
+연결하고자 하는 폴더 위치로 이동(없으면 생성)
+
+ls -al : 내부 문서 확인(비워져 있는것)
+
+git init -b main 을 통해 가상의 저장소 생성 및 초기화
+-> 내부에 .git 파일 생성 유무 확인
+
+폴더에 업로드 하고자 하는 파일 추가(윈도우 탐색기 이용)
+
+git config --global user.name 본인 이름(깃허브에서 사용하는 이름)
+
+git config --global user.email "메일주소"
+
+git remote add 원하는 연결명 https://github.com/hyobin0704/my_study.git
+실습에선 origin으로 사용 완료
+
+화면에 인증 -> 키 입력으로 인증
+
+git add * (현재 폴더 내 파일들을 가상의 저장소에 추가)
+(폴더가 있을 경우 warning 발생 가능)
+
+git commit -m "해당 커밋의 동작을 나타내는 이름 적용" (추가되거나 변경된 파일 정보를 화면에서 확인 가능)
+
+git push -u origin main (깃허브에 파일 업로드 완료)
